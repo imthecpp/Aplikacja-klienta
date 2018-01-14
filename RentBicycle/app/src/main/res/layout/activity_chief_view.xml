@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chief_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dkmb_000.rentbicycle.ChiefView">
+
+    <TextView
+        android:text="Witaj!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/welcometxt"
+        android:textAlignment="textStart"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="user name"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
+        android:layout_below="@+id/welcometxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/accountbalance"
+        android:textSize="36sp"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/accountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@mipmap/loadaccbtn"
+        android:onClick="onClickGoToAccountView"
+        android:layout_below="@+id/accountbalance"
+        android:layout_alignStart="@+id/qrCodeView" />
+
+    <Button
+        android:id="@+id/qrCodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@mipmap/rentbtn"
+        android:onClick="onClickGoToQrCodeView"
+         />
+
+    <Button
+        android:id="@+id/logoutView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@mipmap/logoutbtn"
+        android:onClick="goToLoginView"
+         />
+
+    <TextView
+        android:id="@+id/toLowAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Za mało środków na koncie!"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/logoutView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/curraccbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/acc_balance" />
+
+    <Button
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toLowAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/stationmapbtn"
+        android:onClick="goToMapView"
+         />
+
+
+</RelativeLayout>

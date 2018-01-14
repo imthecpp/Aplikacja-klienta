@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rent Bicycle</string>
+    <string name="mse_new_account">Nie masz jeszcze konta? Zarejestruj się!</string>
+    <string name="mse_have_account">Posiadasz już konto? Zaloguj się!</string>
+    <string name="login_btn">ZALOGUJ</string>
+    <string name="register_btn">REJESTRACJA</string>
+    <string name="acc_balance">stan konta</string>
+
+    <string name="price_one">10 złotych</string>
+    <string name="price_two">20 złotych</string>
+    <string name="price_three">50 złotych</string>
+    <string name="price_frour">100 złotych</string>
+
+    <string-array name="prices">
+        <item>@string/price_one</item>
+        <item>@string/price_two</item>
+        <item>@string/price_three</item>
+        <item>@string/price_frour</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
